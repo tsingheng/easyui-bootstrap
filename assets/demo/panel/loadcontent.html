@@ -1,0 +1,10 @@
+<div id="p" class="easyui-panel" title="Load Panel Content" style="height:400px;"
+		data-options="
+			tools:[{
+				iconCls:'icon icon-reload',
+				handler:function(){
+					$('#p').panel('refresh', ctx + '/assets/demo/panel/_content.html');
+				}
+			}]
+		">
+</div>

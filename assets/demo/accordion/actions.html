@@ -1,0 +1,35 @@
+<div style="margin:0 0 10px 0;">
+	<a href="javascript:void(0)" class="easyui-linkbutton" onclick="selectPanel()">Select</a>
+	<a href="javascript:void(0)" class="easyui-linkbutton" onclick="addPanel()">Add</a>
+	<a href="javascript:void(0)" class="easyui-linkbutton" onclick="removePanel()">Remove</a>
+</div>
+<div id="aa" class="easyui-accordion" style="height:400px;">
+	<div title="About" data-options="iconCls:'icon-ok'" style="overflow:auto;">
+		<h3 style="color:#0099FF;">Accordion for jQuery</h3>
+		<p>Accordion is a part of easyui framework for jQuery. It lets you define your accordion component on web page more easily.</p>
+	</div>
+</div>
+<script type="text/javascript">
+	function selectPanel(){
+		$.messager.prompt('Prompt','Please enter the panel title:',function(s){
+			if (s){
+				$('#aa').accordion('select',s);
+			}
+		});
+	}
+	var idx = 1;
+	function addPanel(){
+		$('#aa').accordion('add',{
+			title:'Title'+idx,
+			content:'<div>Content'+idx+'</div>'
+		});
+		idx++;
+	}
+	function removePanel(){
+		var pp = $('#aa').accordion('getSelected');
+		if (pp){
+			var index = $('#aa').accordion('getPanelIndex',pp);
+			$('#aa').accordion('remove',index);
+		}
+	}
+</script>
