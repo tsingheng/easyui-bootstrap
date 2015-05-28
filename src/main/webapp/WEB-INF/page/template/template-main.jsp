@@ -41,7 +41,7 @@
 	
 	  ga('create', 'UA-46809295-4', 'auto');
 	  ga('send', 'pageview', {
-		  page: '/dashboard',
+		  page: '/index.html',
 		  title: 'Home'
 	  });
 	
