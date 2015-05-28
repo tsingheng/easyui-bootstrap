@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="template.main" template="/WEB-INF/page/template/template-main.jsp"/>
+	
+	<definition name="dashboard" extends="template.main">
+		<put-attribute name="content" value="/WEB-INF/page/dashboard.jsp"/>
+	</definition>
+</tiles-definitions>
