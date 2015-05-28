@@ -133,6 +133,10 @@ $(document).ready(function(){
   		 if(!$('#demo').closest('.panel').is(':visible')){
    			$('#demo').closest('.panel').show();
    		 }
+  		 ga('send', 'pageview', {
+    		 page: link,
+    		 title: currPageItem
+    	 });
      });
      
      function onLoad(data){
