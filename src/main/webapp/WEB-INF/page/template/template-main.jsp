@@ -30,7 +30,9 @@
    		modules.push(module);
     }
     using(modules, function(){
-    	using('http://localhost:8282/assets/application.js');
+    	var domain = window.document.location.href
+    	domain = domain.substring(0, domain.lastIndexOf('/'));
+    	using(domain + '/assets/application.js');
     });
 	</script>
 	<script>

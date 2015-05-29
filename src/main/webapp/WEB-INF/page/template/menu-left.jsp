@@ -57,6 +57,20 @@
 							<li><a href="${ctx}/assets/demo/accordion/multiple.html"> Multiple Accordion Panels</a></li>
 	                    </ul>
 	                </li>
+	                <li class="menu-list"><a href="javascript:;"><i class="fa fa-book"></i> <span>Tabs</span></a>
+	                    <ul class="sub-menu-list">
+	                        <li><a href="${ctx}/assets/demo/tags/basic.html"> Basic</a></li>
+	                        <li><a href="${ctx}/assets/demo/tags/autoheight.html"> Auto Height</a></li>
+	                        <li><a href="${ctx}/assets/demo/tags/hover.html"> Hover Tabs</a></li>
+	                        <li><a href="${ctx}/assets/demo/tags/nestedtabs.html"> Nested Tabs</a></li>
+	                        <li><a href="${ctx}/assets/demo/tags/striptools.html"> Strip Tools</a></li>
+	                        <li><a href="${ctx}/assets/demo/tags/tabstools.html"> Tabs Tools</a></li>
+	                        <li><a href="${ctx}/assets/demo/tags/tabposition.html"> Tab Position</a></li>
+	                        <li><a href="${ctx}/assets/demo/tags/fixedwidth.html"> Fixed Tab Width</a></li>
+	                        <li><a href="${ctx}/assets/demo/tags/tabimage.html"> Tabs with Images</a></li>
+	                        <li><a href="${ctx}/assets/demo/tags/dropdown.html"> Tabs with DropDown</a></li>
+	                    </ul>
+	                </li>
 	                <li class="menu-list"><a href="javascript:;"><i class="fa fa-book"></i> <span>DataGrid</span></a>
 	                    <ul class="sub-menu-list">
 	                        <li><a href="${ctx}/assets/demo/datagrid/basic.html"> Basic DataGrid</a></li>
