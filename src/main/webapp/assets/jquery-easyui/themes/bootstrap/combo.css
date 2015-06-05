@@ -1,15 +1,16 @@
 .combo {
-  display: inline-block;
+  /* display: inline-block; */
   white-space: nowrap;
   margin: 0;
   padding: 0;
-  border-width: 1px;
-  border-style: solid;
+  /* border-width: 1px;
+  border-style: solid; */
+  border:0px;
   overflow: hidden;
   vertical-align: middle;
 }
 .combo .combo-text {
-  font-size: 12px;
+  /* font-size: 12px;
   border: 0px;
   line-height: 20px;
   height: 20px;
@@ -20,17 +21,17 @@
   *line-height: 18px;
   _height: 18px;
   _line-height: 18px;
-  vertical-align: baseline;
+  vertical-align: baseline; */
 }
 .combo-arrow {
-  width: 18px;
+  /* width: 18px;
   height: 20px;
   overflow: hidden;
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
   opacity: 0.6;
-  filter: alpha(opacity=60);
+  filter: alpha(opacity=60); */
 }
 .combo-arrow-hover {
   opacity: 1.0;
@@ -38,6 +39,7 @@
 }
 .combo-panel {
   overflow: auto;
+  padding:0px;
 }
 .combo-arrow {
   background: url('images/combo_arrow.png') no-repeat center center;
@@ -55,4 +57,10 @@
 }
 .combo-arrow-hover {
   background-color: #e6e6e6;
+}
+.combo > .input-group-btn > .btn{
+	margin-left:-1px;
+	border-top-left-radius: 0;
+  	border-bottom-left-radius: 0;
+  	height:34px;
 }

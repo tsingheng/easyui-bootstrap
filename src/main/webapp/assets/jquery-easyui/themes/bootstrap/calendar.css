@@ -6,20 +6,21 @@
 }
 .calendar table {
   border-collapse: separate;
-  font-size: 12px;
+  font-size: 14px;
   width: 100%;
   height: 100%;
 }
 .calendar table td,
 .calendar table th {
-  font-size: 12px;
+  font-size: 13px;
 }
 .calendar-noborder {
   border: 0;
 }
 .calendar-header {
   position: relative;
-  height: 22px;
+  height: 30px;
+  padding:4px 0px;
 }
 .calendar-title {
   text-align: center;
@@ -30,9 +31,9 @@
   display: inline-block;
   top: 2px;
   padding: 0 3px;
-  height: 18px;
-  line-height: 18px;
-  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
   cursor: pointer;
   -moz-border-radius: 5px 5px 5px 5px;
   -webkit-border-radius: 5px 5px 5px 5px;
@@ -78,7 +79,7 @@
 }
 .calendar-day {
   border: 0;
-  padding: 1px;
+  padding: 4px 5px;
   cursor: pointer;
   -moz-border-radius: 5px 5px 5px 5px;
   -webkit-border-radius: 5px 5px 5px 5px;
@@ -171,6 +172,7 @@
 }
 .calendar-body th {
   background: #F5F5F5;
+  padding:4px;
 }
 .calendar-hover,
 .calendar-nav-hover,
@@ -187,4 +189,8 @@
   color: #fff;
   border: 1px solid #0070a9;
   padding: 0;
+}
+.calendar-menu-year.form-control{
+	display:inline-block;
+	height:24px;
 }

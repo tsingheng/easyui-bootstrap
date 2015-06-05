@@ -425,7 +425,8 @@
 			if ($.isArray(opts.tools)){
 				for(var i=0; i<opts.tools.length; i++){
 					var t = $('<a href="javascript:void(0)"></a>').appendTo(p_tool);
-					t.addClass(opts.tools[i].iconCls);
+					var $i = $('<i></i>').appendTo(t);
+					$i.addClass(opts.tools[i].iconCls);
 					if (opts.tools[i].handler){
 						t.bind('click', {handler:opts.tools[i].handler}, function(e){
 							if ($(this).parents('li').hasClass('tabs-disabled')){return;}
@@ -436,7 +437,7 @@
 			} else {
 				$(opts.tools).children().appendTo(p_tool);
 			}
-			var pr = p_tool.children().length * 12;
+			var pr = p_tool.children().length * 14;
 			if (opts.closable) {
 				pr += 8;
 			} else {

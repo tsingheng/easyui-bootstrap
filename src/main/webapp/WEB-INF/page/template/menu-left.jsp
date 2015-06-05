@@ -59,26 +59,42 @@
 	                </li>
 	                <li class="menu-list"><a href="javascript:;"><i class="fa fa-book"></i> <span>Tabs</span></a>
 	                    <ul class="sub-menu-list">
-	                        <li><a href="${ctx}/assets/demo/tags/basic.html"> Basic</a></li>
-	                        <li><a href="${ctx}/assets/demo/tags/autoheight.html"> Auto Height</a></li>
-	                        <li><a href="${ctx}/assets/demo/tags/hover.html"> Hover Tabs</a></li>
-	                        <li><a href="${ctx}/assets/demo/tags/nestedtabs.html"> Nested Tabs</a></li>
-	                        <li><a href="${ctx}/assets/demo/tags/striptools.html"> Strip Tools</a></li>
-	                        <li><a href="${ctx}/assets/demo/tags/tabstools.html"> Tabs Tools</a></li>
-	                        <li><a href="${ctx}/assets/demo/tags/tabposition.html"> Tab Position</a></li>
-	                        <li><a href="${ctx}/assets/demo/tags/fixedwidth.html"> Fixed Tab Width</a></li>
-	                        <li><a href="${ctx}/assets/demo/tags/tabimage.html"> Tabs with Images</a></li>
-	                        <li><a href="${ctx}/assets/demo/tags/dropdown.html"> Tabs with DropDown</a></li>
+	                        <li><a href="${ctx}/assets/demo/tabs/basic.html"> Basic</a></li>
+	                        <li><a href="${ctx}/assets/demo/tabs/autoheight.html"> Auto Height</a></li>
+	                        <li><a href="${ctx}/assets/demo/tabs/hover.html"> Hover Tabs</a></li>
+	                        <li><a href="${ctx}/assets/demo/tabs/nestedtabs.html"> Nested Tabs</a></li>
+	                        <li><a href="${ctx}/assets/demo/tabs/striptools.html"> Strip Tools</a></li>
+	                        <li><a href="${ctx}/assets/demo/tabs/tabstools.html"> Tabs Tools</a></li>
+	                        <li><a href="${ctx}/assets/demo/tabs/tabposition.html"> Tab Position</a></li>
+	                        <li><a href="${ctx}/assets/demo/tabs/fixedwidth.html"> Fixed Tab Width</a></li>
+	                        <li><a href="${ctx}/assets/demo/tabs/tabimage.html"> Tabs with Images</a></li>
+	                        <li><a href="${ctx}/assets/demo/tabs/dropdown.html"> Tabs with DropDown</a></li>
 	                    </ul>
 	                </li>
 	                <li class="menu-list"><a href="javascript:;"><i class="fa fa-book"></i> <span>DataGrid</span></a>
 	                    <ul class="sub-menu-list">
 	                        <li><a href="${ctx}/assets/demo/datagrid/basic.html"> Basic DataGrid</a></li>
-	                        <li><a href="buttons.html"> Buttons</a></li>
+	                        <li><a href="${ctx}/assets/demo/datagrid/clientpagination.html"> Client Side Pagination</a></li>
 	                        <li><a href="tabs-accordions.html"> Tabs &amp; Accordions</a></li>
 	                        <li><a href="typography.html"> Typography</a></li>
 	                        <li><a href="slider.html"> Slider</a></li>
 	                        <li><a href="panels.html"> Panels</a></li>
+	                    </ul>
+	                </li>
+	                <li class="menu-list"><a href="javascript:;"><i class="fa fa-book"></i> <span>DateBox</span></a>
+	                    <ul class="sub-menu-list">
+	                        <li><a href="${ctx}/assets/demo/datebox/basic.html"> Basic</a></li>
+	                        <li><a href="${ctx}/assets/demo/datebox/dateformat.html"> Date Format</a></li>
+	                        <li><a href="${ctx}/assets/demo/datebox/buttons.html"> DateBox Buttons</a></li>
+	                        <li><a href="${ctx}/assets/demo/datebox/validate.html"> Validate DateBox</a></li>
+	                        <li><a href="${ctx}/assets/demo/datebox/events.html"> DateBox Events</a></li>
+	                    </ul>
+	                </li>
+	                <li class="menu-list"><a href="javascript:;"><i class="fa fa-book"></i> <span>DateTimeBox</span></a>
+	                    <ul class="sub-menu-list">
+	                        <li><a href="${ctx}/assets/demo/datetimebox/basic.html"> Basic</a></li>
+	                        <li><a href="${ctx}/assets/demo/datetimebox/initvalue.html"> Initialize Value for DateTime</a></li>
+	                        <li><a href="${ctx}/assets/demo/datetimebox/showseconds.html"> Display Seconds</a></li>
 	                    </ul>
 	                </li>
 	            </ul>

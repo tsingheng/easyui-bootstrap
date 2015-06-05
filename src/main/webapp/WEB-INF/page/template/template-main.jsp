@@ -32,6 +32,7 @@
     using(modules, function(){
     	var domain = window.document.location.href
     	domain = domain.substring(0, domain.lastIndexOf('/'));
+    	using(domain + '/assets/jquery-easyui/locale/easyui-lang-zh_CN.js');
     	using(domain + '/assets/application.js');
     });
 	</script>

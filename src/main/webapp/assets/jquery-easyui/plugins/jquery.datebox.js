@@ -29,6 +29,7 @@
 			}
 		}));
 		$(target).combo('textbox').parent().addClass('datebox');
+		$(target).combo('textbox').next().find('.fa').addClass('fa-calendar');
 		
 		/**
 		 * if the calendar isn't created, create it.
@@ -65,7 +66,13 @@
 			for(var i=0; i<opts.buttons.length; i++){
 				var td = $('<td></td>').appendTo(tr);
 				var btn = opts.buttons[i];
-				var t = $('<a href="javascript:void(0)"></a>').html($.isFunction(btn.text) ? btn.text(target) : btn.text).appendTo(td);
+				var t = $('<a href="javascript:void(0)" class="btn btn-default"></a>').html($.isFunction(btn.text) ? btn.text(target) : btn.text).appendTo(td);
+				if(i == 0){
+					t.addClass('first');
+				}
+				if(i == opts.buttons.length-1){
+					t.addClass('last');
+				}
 				t.bind('click', {target: target, handler: btn.handler}, function(e){
 					e.data.handler.call(this, e.data.target);
 				});
@@ -169,8 +176,9 @@
 	};
 	
 	$.fn.datebox.defaults = $.extend({}, $.fn.combo.defaults, {
-		panelWidth:180,
-		panelHeight:'auto',
+		//panelWidth:180,
+		panelWidth:225,
+		panelHeight:262,
 		sharedCalendar:null,
 		
 		keyHandler: {
