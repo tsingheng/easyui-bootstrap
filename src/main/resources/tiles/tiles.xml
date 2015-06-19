@@ -8,4 +8,5 @@
 	<definition name="dashboard" extends="template.main">
 		<put-attribute name="content" value="/WEB-INF/page/dashboard.jsp"/>
 	</definition>
+	
 </tiles-definitions>

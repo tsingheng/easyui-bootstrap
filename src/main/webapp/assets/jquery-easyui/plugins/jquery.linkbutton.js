@@ -14,29 +14,34 @@
 		var opts = $.data(target, 'linkbutton').options;
 		var t = $(target);
 		
-		t.addClass('l-btn').removeClass('l-btn-plain l-btn-selected l-btn-plain-selected');
-		if (opts.plain){t.addClass('l-btn-plain')}
-		if (opts.selected){
-			t.addClass(opts.plain ? 'l-btn-selected l-btn-plain-selected' : 'l-btn-selected');
+		t.addClass('btn');
+		if(opts.iconCls){
+			t.html(' <i class="' + opts.iconCls + '"></i> ' + t.html());
 		}
-		t.attr('group', opts.group || '');
-		t.attr('id', opts.id || '');
-		t.html(
-			'<span class="l-btn-left">' +
-				'<span class="l-btn-text"></span>' +
-			'</span>'
-		);
-		if (opts.text){
-			t.find('.l-btn-text').html(opts.text);
-			if (opts.iconCls){
-				t.find('.l-btn-text').addClass(opts.iconCls).addClass(opts.iconAlign=='left' ? 'l-btn-icon-left' : 'l-btn-icon-right');
-			}
-		} else {
-			t.find('.l-btn-text').html('<span class="l-btn-empty">&nbsp;</span>');
-			if (opts.iconCls){
-				t.find('.l-btn-empty').addClass(opts.iconCls);
-			}
-		}
+		
+//		t.addClass('l-btn').removeClass('l-btn-plain l-btn-selected l-btn-plain-selected');
+//		if (opts.plain){t.addClass('l-btn-plain')}
+//		if (opts.selected){
+//			t.addClass(opts.plain ? 'l-btn-selected l-btn-plain-selected' : 'l-btn-selected');
+//		}
+//		t.attr('group', opts.group || '');
+//		t.attr('id', opts.id || '');
+//		t.html(
+//			'<span class="l-btn-left">' +
+//				'<span class="l-btn-text"></span>' +
+//			'</span>'
+//		);
+//		if (opts.text){
+//			t.find('.l-btn-text').html(opts.text);
+//			if (opts.iconCls){
+//				t.find('.l-btn-text').addClass(opts.iconCls).addClass(opts.iconAlign=='left' ? 'l-btn-icon-left' : 'l-btn-icon-right');
+//			}
+//		} else {
+//			t.find('.l-btn-text').html('<span class="l-btn-empty">&nbsp;</span>');
+//			if (opts.iconCls){
+//				t.find('.l-btn-empty').addClass(opts.iconCls);
+//			}
+//		}
 		
 		t.unbind('.linkbutton').bind('focus.linkbutton',function(){
 			if (!opts.disabled){
@@ -96,7 +101,8 @@
 				state.onclick = target.onclick;
 				target.onclick = null;
 			}
-			opts.plain ? $(target).addClass('l-btn-disabled l-btn-plain-disabled') : $(target).addClass('l-btn-disabled');
+//			opts.plain ? $(target).addClass('l-btn-disabled l-btn-plain-disabled') : $(target).addClass('l-btn-disabled');
+			$(target).addClass('disabled');
 		} else {
 			opts.disabled = false;
 			if (state.href) {

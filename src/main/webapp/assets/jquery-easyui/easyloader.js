@@ -121,7 +121,8 @@
 		},
 		validatebox:{
 			js:'jquery.validatebox.js',
-			css:'validatebox.css'
+			css:'validatebox.css',
+			dependencies:['tooltip']
 		},
 		numberbox:{
 			js:'jquery.numberbox.js',
@@ -165,6 +166,10 @@
 		},
 		parser:{
 			js:'jquery.parser.js'
+		},
+		tooltip:{
+			js:'jquery.tooltip.js',
+			css:'tooltip.css'
 		}
 	};
 	

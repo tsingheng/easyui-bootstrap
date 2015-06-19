@@ -35,11 +35,11 @@
 			lineHeight : _6.height() + "px"
 		});
 		_9._outerHeight(_6.height());
+		_6.insertAfter(_2);
 		_7.panel("resize", {
 			width : (_5.panelWidth ? _5.panelWidth : _6.outerWidth()),
 			height : _5.panelHeight
 		});
-		_6.insertAfter(_2);
 	}
 	;
 	function _b(_c) {
@@ -47,7 +47,7 @@
 		var _d = $(
 				"<span class=\"combo input-group\">"
 						+ "<input type=\"text\" class=\"combo-text form-control\" autocomplete=\"off\">"
-						+ "<span class=\"input-group-btn combo-arrow\"><a href=\"javascript:;\" class=\"btn btn-default\"><i class=\"fa\"></i></a></span>"
+						+ "<span class=\"input-group-btn combo-arrow\"><a href=\"javascript:;\" class=\"btn btn-default\"><i class=\"fa fa-chevron-down\"></i></a></span>"
 						+ "<input type=\"hidden\" class=\"combo-value\">"
 						+ "</span>").insertAfter(_c);
 		var _e = $("<div class=\"combo-panel\"></div>").appendTo("body");
@@ -60,9 +60,11 @@
 				zIndex : 10
 			},
 			onOpen : function() {
+				_d.addClass('open');
 				$(this).panel("resize");
 			},
 			onClose : function() {
+				_d.removeClass('open');
 				var _f = $.data(_c, "combo");
 				if (_f) {
 					_f.options.onHidePanel.call(_c);

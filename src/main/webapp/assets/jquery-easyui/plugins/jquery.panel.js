@@ -119,6 +119,10 @@
 						if (_15.tools[i].handler) {
 							t.bind("click", eval(_15.tools[i].handler));
 						}
+						if(_15.tools[i].file){
+							var $file = $('<input type="file" id="file-' + new Date().getTime() + '"/>').appendTo(t);
+							$file.uploadify(_15.tools[i].settings||{});
+						}
 					}
 				} else {
 					$(_15.tools).children().each(

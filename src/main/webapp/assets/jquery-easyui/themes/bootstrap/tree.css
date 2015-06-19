@@ -12,9 +12,9 @@
   padding: 0;
 }
 .tree-node {
-  height: 18px;
   white-space: nowrap;
   cursor: pointer;
+  padding:5px 5px 5px 5px;height:30px;border-radius: 4px;-webkit-border-radius: 4px;position:relative;
 }
 .tree-hit {
   cursor: pointer;

@@ -6,6 +6,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="${ctx}/assets/fortawesome-4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="${ctx}/assets/jquery-easyui/themes/icon.css">
 	<link rel="stylesheet" href="${ctx}/assets/themes/default/default.css">
 	<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>

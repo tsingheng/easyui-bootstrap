@@ -28,8 +28,8 @@
 				opts.onShowPanel.call(target);
 			}
 		}));
-		$(target).combo('textbox').parent().addClass('datebox');
-		$(target).combo('textbox').next().find('.fa').addClass('fa-calendar');
+		$(target).combo('textbox').closest('.combo').addClass('datebox');
+		$(target).combo('textbox').closest('.combo').find('.fa').addClass('fa-calendar');
 		
 		/**
 		 * if the calendar isn't created, create it.

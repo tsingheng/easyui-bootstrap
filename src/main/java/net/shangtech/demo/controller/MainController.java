@@ -21,4 +21,9 @@ public class MainController {
 		wrapper.setDate(new Date());
 		return wrapper;
 	}
+	
+	@RequestMapping("/index")
+	public String index(){
+		return "index";
+	}
 }

@@ -81,6 +81,31 @@
 	                        <li><a href="panels.html"> Panels</a></li>
 	                    </ul>
 	                </li>
+	                <li class="menu-list"><a href="javascript:;"><i class="fa fa-book"></i> <span>Tree</span></a>
+	                    <ul class="sub-menu-list">
+	                        <li><a href="${ctx}/assets/demo/tree/basic.html"> Basic Tree</a></li>
+	                    </ul>
+	                </li>
+	                <li class="menu-list"><a href="javascript:;"><i class="fa fa-book"></i> <span>LinkButton</span></a>
+	                    <ul class="sub-menu-list">
+	                        <li><a href="${ctx}/assets/demo/linkbutton/basic.html"> Basic</a></li>
+	                    </ul>
+	                </li>
+	                <li class="menu-list"><a href="javascript:;"><i class="fa fa-book"></i> <span>Menu</span></a>
+	                    <ul class="sub-menu-list">
+	                        <li><a href="${ctx}/assets/demo/menu/basic.html"> Basic</a></li>
+	                    </ul>
+	                </li>
+	                <li class="menu-list"><a href="javascript:;"><i class="fa fa-book"></i> <span>Combo</span></a>
+	                    <ul class="sub-menu-list">
+	                        <li><a href="${ctx}/assets/demo/combo/basic.html"> Basic</a></li>
+	                    </ul>
+	                </li>
+	                <li class="menu-list"><a href="javascript:;"><i class="fa fa-book"></i> <span>ComboBox</span></a>
+	                    <ul class="sub-menu-list">
+	                        <li><a href="${ctx}/assets/demo/combobox/basic.html"> Basic</a></li>
+	                    </ul>
+	                </li>
 	                <li class="menu-list"><a href="javascript:;"><i class="fa fa-book"></i> <span>DateBox</span></a>
 	                    <ul class="sub-menu-list">
 	                        <li><a href="${ctx}/assets/demo/datebox/basic.html"> Basic</a></li>
@@ -95,6 +120,17 @@
 	                        <li><a href="${ctx}/assets/demo/datetimebox/basic.html"> Basic</a></li>
 	                        <li><a href="${ctx}/assets/demo/datetimebox/initvalue.html"> Initialize Value for DateTime</a></li>
 	                        <li><a href="${ctx}/assets/demo/datetimebox/showseconds.html"> Display Seconds</a></li>
+	                    </ul>
+	                </li>
+	                <li class="menu-list"><a href="javascript:;"><i class="fa fa-book"></i> <span>Tooltip</span></a>
+	                    <ul class="sub-menu-list">
+	                        <li><a href="${ctx}/assets/demo/tooltip/basic.html"> Basic</a></li>
+	                        <li><a href="${ctx}/assets/demo/tooltip/position.html"> Position</a></li>
+	                        <li><a href="${ctx}/assets/demo/tooltip/customcontent.html"> Custom Content</a></li>
+	                        <li><a href="${ctx}/assets/demo/tooltip/customstyle.html"> Custom Style</a></li>
+	                        <li><a href="${ctx}/assets/demo/tooltip/ajax.html"> Ajax Tooltip</a></li>
+	                        <li><a href="${ctx}/assets/demo/tooltip/tooltipdialog.html"> Tooltip Dialog</a></li>
+	                        <li><a href="${ctx}/assets/demo/tooltip/toolbar.html"> Tooltip as Toolbar</a></li>
 	                    </ul>
 	                </li>
 	            </ul>

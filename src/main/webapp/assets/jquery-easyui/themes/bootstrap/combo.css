@@ -23,6 +23,12 @@
   _line-height: 18px;
   vertical-align: baseline; */
 }
+.combo.open .combo-text{
+	border-bottom-left-radius:0px;
+}
+.combo.open .combo-arrow a{
+	border-bottom-right-radius:0px;
+}
 .combo-arrow {
   /* width: 18px;
   height: 20px;
@@ -47,6 +53,7 @@
 .combo,
 .combo-panel {
   background-color: #ffffff;
+  margin-top:-1px;
 }
 .combo {
   border-color: #D4D4D4;
